@@ -77,21 +77,21 @@ document.getElementById("innerquestion").addEventListener("mouseleave", () => {
 
 function questionColor() {
     if (!inDeadRemoval && !gameEnded) {
-        title.innerHTML = '雙人線上圍棋-線上圍棋棋盤&nbsp;<img id="innerquestion" src="../question_mark.png" alt="question_mark">';
+        title.innerHTML = '雙人線上圍棋-線上圍棋棋盤&nbsp;<img id="innerquestion" src="question_mark.png" alt="question_mark">';
         document.documentElement.style.setProperty("--shadowColorR", "0");
         document.documentElement.style.setProperty("--shadowColorG", "136");
         document.documentElement.style.setProperty("--shadowColorB", "255");
         pretext.innerHTML = infoString1;
     }
     else if (inDeadRemoval && !gameEnded) {
-        title.innerHTML = '雙人線上圍棋-線上圍棋棋盤&nbsp;<img id="innerquestion" src="../question_mark_1.png" alt="question_mark">';
+        title.innerHTML = '雙人線上圍棋-線上圍棋棋盤&nbsp;<img id="innerquestion" src="question_mark_1.png" alt="question_mark">';
         document.documentElement.style.setProperty("--shadowColorR", "0");
         document.documentElement.style.setProperty("--shadowColorG", "154");
         document.documentElement.style.setProperty("--shadowColorB", "34");
         pretext.innerHTML = infoString2;
     }
     else {
-        title.innerHTML = '雙人線上圍棋-線上圍棋棋盤&nbsp;<img id="innerquestion" src="../question_mark_2.png" alt="question_mark">';
+        title.innerHTML = '雙人線上圍棋-線上圍棋棋盤&nbsp;<img id="innerquestion" src="question_mark_2.png" alt="question_mark">';
         document.documentElement.style.setProperty("--shadowColorR", "255");
         document.documentElement.style.setProperty("--shadowColorG", "14");
         document.documentElement.style.setProperty("--shadowColorB", "14");
@@ -484,7 +484,7 @@ passButton.addEventListener("click", () => {
             passButton.textContent = "結束移除死子模式";
             regretButton.textContent = "依原棋局繼續遊戲";
             colordisplay.textContent = "移除死子模式";
-            trela(`<img id="innerquestion3" src="../question_mark_1.png" alt="question_mark">進入移除死子模式<br>請確實移除死子才可精確計算目數!`);
+            trela(`<img id="innerquestion3" src="question_mark_1.png" alt="question_mark">進入移除死子模式<br>請確實移除死子才可精確計算目數!`);
             addEventListenerForInnerQuestionsOneTwoAndThree();
             enableDeadStoneRemoval();
         } else {
@@ -726,7 +726,7 @@ function endGameScoring() {
             }
         }
     }
-    scoreDiv.innerHTML = `黑&nbsp;${blackScore} - ${whiteScore}&nbsp;白<span id="komi">&nbsp;(+6.5)&nbsp;</span><img id="innerquestion2" src="../question_mark_2.png" alt="question_mark" style="z-index: 11;" tabindex="0">`;
+    scoreDiv.innerHTML = `黑&nbsp;${blackScore} - ${whiteScore}&nbsp;白<span id="komi">&nbsp;(+6.5)&nbsp;</span><img id="innerquestion2" src="question_mark_2.png" alt="question_mark" style="z-index: 11;" tabindex="0">`;
     const icon = document.getElementById('innerquestion2');
     const tooltip = document.getElementById('info2');
 
@@ -757,7 +757,7 @@ function endGameScoring() {
     icon.style.width = `${0.06 * boardsize}px`;
     icon.style.height = `${0.06 * boardsize}px`;
 
-    trela(`<img id="innerquestion3" src="../question_mark_2.png" alt="question_mark">遊戲已結束!<br>須確實完成收官與提死子才能正確地記算目數，<br>若尚未完成可以選擇繼續棋局!`);
+    trela(`<img id="innerquestion3" src="question_mark_2.png" alt="question_mark">遊戲已結束!<br>須確實完成收官與提死子才能正確地記算目數，<br>若尚未完成可以選擇繼續棋局!`);
     addEventListenerForInnerQuestionsOneTwoAndThree();
     gameEnded = true;
     regretButton.textContent = "繼續棋局";

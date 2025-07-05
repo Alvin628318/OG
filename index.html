@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="線上圍棋棋盤-與朋友在同一台電腦下棋 可計算目數 可儲存、回放、下載動態棋譜">
+    <meta name="keywords" content="線上 圍棋 棋盤 雙人 計算 目數 儲存 棋譜">
+    <meta name="author" content="Alvin Lin">
+    <title>雙人線上圍棋</title>
+    <link rel="stylesheet" href="go.css">
+</head>
+<body>
+    <header id="header">
+        <nav id="nav">
+            <div id="nav_placeholder" class="text">雙人線上圍棋-線上圍棋棋盤&nbsp;<img id="innerquestion" src="../question_mark.png" alt="question_mark" tabindex="0"></div>
+            <div id="currentcolor">黑棋先</div>
+            <div id="divider"></div>
+            <div id="language_div">
+                <button id="language_switch" class="text"><img src="../language_icon.png" alt="language_logo" height="70%"><span>语言/語言/言語/언어/Language</span><img src="../dropdown_icon.png" alt="dropdown_logo" height="80%"></button>
+                <ul id="language_list">
+                    <li class="language_li"><a class="language_a text" href="../Go_zh_Hans/index.html">简体中文</a></li>
+                    <li class="language_li"><a class="language_a text" href="../Go_zh_Hant/index.html">繁體中文</a></li>
+                    <li class="language_li"><a class="language_a text" href="../Go_ja/index.html">日本語</a></li>
+                    <li class="language_li"><a class="language_a text" href="../Go_ko/index.html">한국어</a></li>
+                    <li class="language_li"><a class="language_a text" href="../Go_en/index.html">English</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div id="options">
+            <div id="optionbuttons">
+                <button class="optionitems" id="handicap">讓子&nbsp;<b>0</b>&nbsp;子</button>
+                <div></div>
+                <button class="optionitems" id="regret">悔棋</button>
+                <button class="optionitems" id="pass">虛手/結束棋局</button>
+                <div></div>
+                <button class="optionitems" id="view">查看棋局回放</button>
+                <button class="optionitems" id="upload">上傳棋局回放</button>
+                <button class="optionitems" id="download">下載棋局回放</button>
+                <button class="optionitems" id="restart">重新開始</button>
+            </div>
+            <div>&nbsp;&nbsp;&nbsp;</div>
+            <div id="optionscroll">
+                <label class="optionitems" for="replay">棋盤縮放</label>
+                <input class="optionitems" type="range" id="replay" min="1" max="100" value="25">
+            </div>
+        </div>
+        <div id="info">
+            <div id="vh5"></div>
+            <div id="maininfo">
+                <pre id="pretext"></pre>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="section1">
+
+        </section>
+        <div id="board">
+            <img src="../Blank_Go_board.png" alt="Go Board" id="Blank_Go_board">
+            <div id="grid"></div>
+            <div id="scorediv"><span id="lefthalf"></span><span id="score"></span><span id="righthalf"></span></div>
+            <div id="alertbox">
+                <div id="leftbox" class="others"></div>
+                <div id="centerbox">
+                    <div id="upperbox" class="others"></div>
+                    <div id="alert"></div>
+                    <div id="lowerbox" class="others"></div>
+                </div>
+                <div id="rightbox" class="others"></div>
+            </div>
+            <pre id="info2"></pre>
+            <div class="space"></div>
+        </div>
+        <section id="section2">
+
+        </section>
+    </main>
+    <div class="space"></div>
+    <div class="ad"></div>
+    <footer>
+        <p class="text">Created by Alvin Lin&nbsp;&nbsp;&nbsp;</p>
+        <p class="text">網頁問題請寄信到:&nbsp;&nbsp;<a href="mailto:alvin628318@gmail.com">alvin628318@gmail.com</a></p>
+    </footer>
+    <script src="go.js"></script>
+</body>
+</html>
